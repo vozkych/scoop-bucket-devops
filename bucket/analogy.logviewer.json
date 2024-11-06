@@ -11,7 +11,7 @@
             "Analogy.LogViewer"
         ]
     ],
-    "persist": "Analogy.dll.config",
+    "persist": "AnalogyLocalSettings.json",
     "checkver": {
         "url": "https://api.github.com/repositories/201478253/releases/latest",
         "jsonpath": "$..browser_download_url",
