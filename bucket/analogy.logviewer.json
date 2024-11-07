@@ -24,5 +24,18 @@
     },
     "autoupdate": {
         "url": "https://github.com/Analogy-LogViewer/Analogy.LogViewer/releases/download/v$version/net8.0-windows.zip"
-    }
+    },
+    "initial_data": {
+        "Title": "Analogy.LogViewer",
+        "Providers": [
+            "Serilog",
+            "NLog",
+            "Log4Net"
+        ]
+    },
+    "cookie": {
+        "name": "AnalogyLogViewer",
+        "url": "https://github.com/Analogy-LogViewer/Analogy.LogViewer"
+    },
+    "post_install": "Write-Host \"Initial data:\"; Write-Host $manifest.initial_data.Providers; Write-Host \"Cookie:\"; Write-Host $manifest.cookie;"
 }
