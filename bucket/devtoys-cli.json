@@ -1,0 +1,24 @@
+﻿{
+    "version": "2.0.8.0",
+    "description": "A Swiss Army knife for developers. CLI version.",
+    "homepage": "https://devtoys.app/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.8.0/devtoys.cli_win_x64_portable.zip",
+            "hash": "EDF459F748F41A3EE7455699FC5A8D83BEF0C3B3137B0C8663D33E6A9F3261A9"
+        }
+    },
+    "bin": "DevToys.CLI.exe",
+    "checkver": {
+        "url": "https://github.com/DevToys-app/DevToys/releases",
+        "regex": "/releases/tag/v([^\"]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/DevToys-app/DevToys/releases/download/v$version/devtoys.cli_win_x64_portable.zip"
+            }
+        }
+    }
+}
