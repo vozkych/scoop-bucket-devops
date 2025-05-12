@@ -15,7 +15,10 @@
             "DevToys"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/DevToys-app/DevToys/releases",
+        "regex": "/releases/tag/v([^\"]+)\""
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
