@@ -1,12 +1,12 @@
 {
-    "version": "0.6.3",
+    "version": "0.6.14",
     "description": "Browser extension and cross-platform desktop application for translation based on ChatGPT API",
     "homepage": "https://github.com/nextai-translator/nextai-translator",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nextai-translator/nextai-translator/releases/download/v0.6.3/NextAI.Translator_0.6.3_x64-setup_windows.exe#/dl.7z",
-            "hash": "b4a1ec0597161680bf1ae3360b8c0dc16fe532538f46a5948aa0fe42114c3d4b"
+            "url": "https://github.com/nextai-translator/nextai-translator/releases/download/v0.6.14/NextAI.Translator_0.6.14_x64-setup_windows.exe#/dl.7z",
+            "hash": "69f235d62379428562a258c169fed34ccc38ed1eb477e4ffc7bbdcea3c98ebb2"
         }
     },
     "post_install": "@('$PLUGINSDIR', '$TEMP', 'uninstall.exe') | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse -Force }",
